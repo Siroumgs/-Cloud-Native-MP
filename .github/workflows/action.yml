@@ -60,8 +60,6 @@ jobs:
 
       - name: Start Minikube
         uses: medyagh/setup-minikube@master
-        with:
-          kubernetes-version: 'v1.27.0' # optionnel : adapter selon besoin
 
       - name: Use Minikube Docker daemon
         run: |
