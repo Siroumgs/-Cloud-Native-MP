@@ -13,7 +13,7 @@ spec:
         app: myservice
     spec:
       containers:
-        - image: sirmgs26/myservice:1
+        - image: sirmgs26/myservice:latest
           imagePullPolicy: IfNotPresent
           name: myservice
       restartPolicy: Always
