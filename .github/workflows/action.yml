@@ -72,8 +72,8 @@ jobs:
 
       - name: Deploy manifests to Minikube
         run: |
-          kubectl apply -f k8s/MS-deploy.yml
-          kubectl apply -f k8s/MS-service.yml
+          kubectl apply -f MyService/k8s/MS-deploy.yml
+          kubectl apply -f MyService/k8s/MS-service.yml
 
       - name: Wait for pods to be ready
         run: |
