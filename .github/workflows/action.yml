@@ -105,4 +105,6 @@ jobs:
       # ------------------------------
       - name: Log Kubernetes pods
         run: |
-          kubectl logs $(kubectl get pods -l app=myservice -o name)
+          POD=$(kubectl get pods -l app=myservice -o jsonpath='{.items[0].metadata.name}')
+          echo "Logging pod: $POD"
+          kubectl logs $POD
