@@ -57,8 +57,8 @@ jobs:
       # ------------------------------
       - name: Deploy the image to minikube
         run: |
-          kubectl apply -f MyService/k8s/MS-deploy.yml
-          kubectl apply -f MyService/k8s/MS-service.yml
+          kubectl apply -f k8s/MS-deploy.yml
+          kubectl apply -f k8s/MS-service.yml
 
       # ------------------------------
       # 6. Debug pods
